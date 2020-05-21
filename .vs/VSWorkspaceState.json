@@ -1,9 +1,5 @@
 {
-  "ExpandedNodes": [
-    "",
-    "\\src",
-    "\\src\\Nodes"
-  ],
+  "ExpandedNodes": ["", "\\src", "\\src\\Nodes"],
   "SelectedNode": "\\src\\PartyBar.js",
   "PreviewInSolutionExplorer": false
 }
