@@ -1,20 +1,16 @@
 import React from 'react';
-import { Box, Grommet } from 'grommet';
-import PartyBar from './PartyBar';
+import { Grommet } from 'grommet';
 import Viewport from './Viewport';
-import Contextbar from './Contextbar';
+
 
 function App() {
   return (
     <Grommet plain>
-      <header className="App-header">
+      <header>
         RPG Importer
       </header>
-      <Box direction="row">
-        <PartyBar/>
-        <Viewport/>
-      </Box>
-      <Contextbar/>
+      <Viewport />
+      
     </Grommet>
   );
 }
