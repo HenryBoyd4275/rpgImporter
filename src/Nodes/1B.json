@@ -7,7 +7,7 @@
     {
       "Action": "Approach the Gates",
       "Time": "1m",
-      "Effect": "GoTo 1B"
+      "Effect": "GoTo 1Ba"
     }
   ]
 }

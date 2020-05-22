@@ -1,0 +1,13 @@
+{
+  "Name": "The Gates of Barovia",
+  "Key": "1Ba",
+  "Description": "As you approach the gates they screech open before you.",
+  "Image": "None",
+  "ContextActions": [
+    {
+      "Action": "Pass through the Gates",
+      "Time": "1m",
+      "Effect": "Goto 1Bb"
+    }
+  ]
+}
