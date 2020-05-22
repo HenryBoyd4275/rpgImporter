@@ -7,7 +7,12 @@
     {
       "Action": "Pass through the Gates",
       "Time": "1m",
-      "Effect": "Goto 1Bb"
+      "Effect": "GoTo 1Bb"
+    },
+    {
+      "Action": "Go Back",
+      "Time": "1m",
+      "Effect": "GoTo 1B"
     }
   ]
 }

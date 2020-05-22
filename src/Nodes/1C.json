@@ -1,0 +1,20 @@
+{
+  "Name": "The Svalich Woods",
+  "Key": "1C",
+  "Description": "Towering trees, whose tops are lost in heavy gray mist, block out all save a death-gray light. The tree trunks almost touch. The thick, damp undergrowth presses in on you, making it impossible even to see one another at all times. The woods have the silence of a forgotten grave, yet exude the feeling of an unsounded scream.",
+  "Image": "None",
+  "ContextActions": [
+    {
+      "Action": "Continue Into the Mists",
+      "Time": "30m",
+      "Effect": "GoTo 1Ca"
+    },
+    {
+      "Action": "Turn back",
+      "Time": "1m",
+      "Effect": "GoTo 1Bb"
+    }
+  ]
+}
+
+

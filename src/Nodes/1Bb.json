@@ -1,0 +1,18 @@
+{
+  "Name": "The Gates of Barovia",
+  "Key": "1B",
+  "Description": "Once you are through the gate screech shut again behond you.",
+  "Image": "None",
+  "ContextActions": [
+    {
+      "Action": "Continue down the road",
+      "Time": "1m",
+      "Effect": "Will lead to Barovia Village"
+    },
+    {
+      "Action": "Go Back through the woods",
+      "Time": "1m",
+      "Effect": "GoTo 1C"
+    }
+  ]
+}
