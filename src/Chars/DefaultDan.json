@@ -1,0 +1,25 @@
+{
+  "name": "Default Dan",
+  "race": "Human",
+  "portrait": "",
+  "image":  "",
+  "Body": {
+    "Strength": 10,
+    "Agility": 10,
+    "Coordination": 10,
+    "Fitness":  10
+  },
+  "Mind": {
+    "Perception": 10,
+    "Intelligence": 10,
+    "Resolve": 10,
+    "Social": 10
+  },
+  "Soul": {
+    "Essence": 10,
+    "Focus": 10,
+    "Reception": 0
+  },
+  "Advantages": {},
+  "Skills": {}
+}

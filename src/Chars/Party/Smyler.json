@@ -1,0 +1,37 @@
+{
+  "name": "Smyler",
+  "race": "Human",
+  "portrait": "",
+  "image": "",
+  "Body": {
+    "Strength": 10,
+    "Agility": 13,
+    "Coordination": 14,
+    "Fitness": 12
+  },
+  "Mind": {
+    "Perception": 14,
+    "Intelligence": 12,
+    "Resolve": 9,
+    "Social": 11
+  },
+  "Soul": {
+    "Essence": 2,
+    "Focus": 0,
+    "Reception": 0
+  },
+  "Advantages": ["Combat Reflexes", "Luck"],
+  "Skills": {
+    "Knife": 16,
+    "Streetwise": 15,
+    "Fast-Talk": 14,
+    "Slight-of-Hand": 15,
+    "Throwing-Knife": 14,
+    "Stealth": 16,
+    "Observation": 16,
+    "Tracking": 14,
+    "Survival": 13,
+    "Climbing": 14,
+    "Insight": 14
+  }
+}

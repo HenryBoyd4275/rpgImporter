@@ -6,8 +6,8 @@
   "ContextActions": [
     {
       "Action": "Continue down the road",
-      "Time": "1m",
-      "Effect": "Will lead to Barovia Village"
+      "Time": "2h",
+      "Effect": "todo"
     },
     {
       "Action": "Go Back through the woods",

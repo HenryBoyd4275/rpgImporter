@@ -3,9 +3,7 @@ import { Grommet } from "grommet";
 import Viewport from "./Viewport";
 
 function App() {
-
   
-
   return (
     <Grommet plain>
       <header>RPG Importer</header>

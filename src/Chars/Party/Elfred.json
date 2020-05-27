@@ -1,0 +1,35 @@
+{
+  "name": "Elfred",
+  "race": "Elf",
+  "portrait": "",
+  "image": "",
+  "Body": {
+    "Strength": 11,
+    "Agility": 12,
+    "Coordination": 13,
+    "Fitness": 12
+  },
+  "Mind": {
+    "Perception": 14,
+    "Intelligence": 14,
+    "Resolve": 10,
+    "Social": 8
+  },
+  "Soul": {
+    "Essence": 10,
+    "Focus": 10,
+    "Reception": 10
+  },
+  "Advantages": ["Combat Reflexes", "Magery 2"],
+  "Skills": {
+    "Broadsword": 16,
+    "Dance": 15,
+    "Arcana": 16,
+    "Archery": 13,
+    "Stealth": 12,
+    "Climbing": 12,
+    "Research": 14,
+    "Body Sense": 15
+  },
+  "Spells": ["Haste", "Grease", "Great Haste", "Apportation", "Deflect Missile", "Throw", "Throw Weapon", "Slow Fall",  ]
+}

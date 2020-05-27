@@ -1,0 +1,35 @@
+{
+  "name": "Bornstark vonHaus",
+  "race": "Human",
+  "portrait": "none",
+  "image": "none",
+  "Body": {
+    "Strength": 17,
+    "Agility": 11,
+    "Coordination": 13,
+    "Fitness": 14
+  },
+  "Mind": {
+    "Perception": 12,
+    "Intelligence": 11,
+    "Resolve": 13,
+    "Social": 12
+  },
+  "Soul": {
+    "Essence": 4,
+    "Focus": 0,
+    "Reception": 0
+  },
+  "Advantages": ["Combat Reflexes", "High Pain Threshhold"],
+  "Skills": {
+    "Two-Handed_Sword": 18,
+    "Soldier": 14,
+    "Armoury": 12,
+    "Riding": 12,
+    "Savoir-Faire": 14,
+    "Knife": 12,
+    "Wrestling": 13,
+    "Boxing": 14,
+    "Crossbow": 14
+  }
+}

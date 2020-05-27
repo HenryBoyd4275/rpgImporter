@@ -1,0 +1,33 @@
+{
+  "name": "Wil",
+  "race": "Human",
+  "portrait": "",
+  "image":  "",
+  "Body": {
+    "Strength": 12,
+    "Agility": 10,
+    "Coordination": 12,
+    "Fitness":  12
+  },
+  "Mind": {
+    "Perception": 11,
+    "Intelligence": 11,
+    "Resolve": 13,
+    "Social": 10
+  },
+  "Soul": {
+    "Essence": 10,
+    "Focus": 10,
+    "Reception": 0
+  },
+  "Advantages": ["Combat Reflexes", "High Pain Threshold", "Power Investure 2"],
+  "Skills": {
+    "Axe/Mace": 15,
+    "Shield": 14,
+    "Theology": 13,
+    "Public Speaking": 13,
+    "First-Aid": 14,
+    "Physician": 14
+  },
+  "Spells": {}
+}

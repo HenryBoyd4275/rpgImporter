@@ -15,7 +15,7 @@ export default function Contextbar(props) {
       <Grid
         rows={["fill"]}
         columns={{
-          count: "fill",
+          count: props.currentNode.ContextActions.length,
           size: "auto"
         }}
         gap="small"
