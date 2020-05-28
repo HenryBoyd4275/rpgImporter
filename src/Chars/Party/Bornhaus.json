@@ -10,7 +10,7 @@
     "Fitness": 14
   },
   "Mind": {
-    "Perception": 12,
+    "Perception": 10,
     "Intelligence": 11,
     "Resolve": 13,
     "Social": 12
@@ -30,6 +30,6 @@
     "Knife": 12,
     "Wrestling": 13,
     "Boxing": 14,
-    "Crossbow": 14
+    "Crossbow": 12
   }
 }

@@ -29,5 +29,18 @@
     "First-Aid": 14,
     "Physician": 14
   },
-  "Spells": {}
+  "Spells": {
+    "Lend Energy": 15,
+    "Lend Vitality": 15,
+    "Resist Poison": 15,
+    "Minor Healing": 15,
+    "Major Healing": 15,
+    "Cure Disease": 15,
+    "Neutralize Poison": 15,
+    "Restoration": 15,
+    "Shield": 15,
+    "Armour": 15,
+    "Bladeturning": 15,
+    "Missile Shield": 15
+  }
 }

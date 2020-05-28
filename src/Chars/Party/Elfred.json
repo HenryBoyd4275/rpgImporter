@@ -31,5 +31,14 @@
     "Research": 14,
     "Body Sense": 15
   },
-  "Spells": ["Haste", "Grease", "Great Haste", "Apportation", "Deflect Missile", "Throw", "Throw Weapon", "Slow Fall",  ]
+  "Spells": {
+    "Haste": 15,
+    "Grease": 15,
+    "Great Haste": 15,
+    "Apportation": 15,
+    "Deflect Missile": 15,
+    "Throw": 15,
+    "Throw Weapon": 15,
+    "Slow Fall": 15
+  }
 }
