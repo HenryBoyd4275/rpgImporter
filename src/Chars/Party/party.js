@@ -1,17 +1,10 @@
-class Party {
+export default class Party {
+
   constructor(chars) {
     this.chars = chars;
   }
 
-  get bestSkill(skill) {
-    return this.calcBestSkill(skill);
-  }
-
-  get bestAttribute(attribute) {
-    return this.calcBestAttribute(attribute);
-  }
-
-  calcBestSkill(skill) {
+  bestSkill(skill) {
     let temp = 0;
     this.chars.forEach(element => {
       if (element.skills.skill > temp) {
@@ -21,7 +14,7 @@ class Party {
     return temp;
   }
 
-  calcBestAttribute(attribute) {
+  bestAttribute(attribute) {
     let temp = 0;
     this.chars.forEach(element => {
       if (element.attribute > temp) {

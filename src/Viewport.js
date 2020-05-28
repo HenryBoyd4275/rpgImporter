@@ -5,16 +5,13 @@ import PartyBar from "./PartyBar";
 import Clock from "./Clock.js";
 import { increaseTime } from "./ViewHelpers";
 
-export default function Viewport() {
+export default function Viewport(props) {
   const [node, setNode] = useState(require(`./Nodes/1A.json`));
   const [time, setTime] = useState([0, 0, 0]);
 
   function goTo(key) {
     if (`./Nodes/${key}.json`) {
       setNode(require(`./Nodes/${key}.json`));
-    }
-    else if (`./Nodes/${key}.JSON`) {
-      setNode(require(`./Nodes/${key}.JSON`));
     }
     else {
       console.log("Could not find Node")
@@ -36,17 +33,17 @@ export default function Viewport() {
 
   return (
     <Box
-      border={{ color: "brand", size: "large" }}
+      border={{ color: "highlight", size: "large" }}
       width="100%"
       height="100%"
       direction="column"
     >
-      <Box pad="medium" height="100%" background="neutral-2">
+      <Box pad="medium" height="100%" background="background">
         <Header align="center"><Box>Map</Box> {node.Name} <Clock currentTime={time} /></Header>
         
         <Box
           pad="small"
-          border={{ color: "brand", size: "large" }}
+          border={{ color: "highlight", size: "large" }}
           width="100%"
           height="8em"
           align="center"
@@ -56,7 +53,7 @@ export default function Viewport() {
         <Box height="24em" />
         <Contextbar currentNode={node} execute={execute}/>
       </Box>
-      <PartyBar />
+      <PartyBar party={props.party}/>
     </Box>
   );
 }

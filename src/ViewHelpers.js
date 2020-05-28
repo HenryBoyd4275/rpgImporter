@@ -13,6 +13,8 @@ export function increaseTime(arg, curTime) {
       case "m":
         newTime[2] += 1 * value;
         break;
+      default:
+        console.log("unable to find case, does time end with proper d/h/m designation?");
     }
     if (newTime[2] >= 60) {
       newTime[1] += 1;
