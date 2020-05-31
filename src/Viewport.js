@@ -54,7 +54,7 @@ export default function Viewport(props) {
           {node.Description}
         </Box>
         <Box height="18em" >
-          <Image fit="contain" src={node.Image}/>
+          <Image src={node.Image}/>
         </Box>
         <Contextbar currentNode={node} execute={execute}/>
       </Box>

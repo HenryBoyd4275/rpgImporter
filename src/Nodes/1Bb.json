@@ -1,8 +1,8 @@
 {
   "Name": "The Gates of Barovia",
   "Key": "1B",
-  "Description": "Once you are through the gate screech shut again behind you.",
-  "Image": "https://github.com/HenryBoyd4275/rpgImporter/blob/master/src/Images/B.png?raw=true",
+  "Description": "Once you are through the gate screech shut again behond you.",
+  "Image": "B",
   "ContextActions": [
     {
       "Action": "Continue down the road",
