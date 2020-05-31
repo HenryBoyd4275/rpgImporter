@@ -2,6 +2,7 @@ export default class Party {
 
   constructor(chars) {
     this.chars = chars;
+    this.items = [];
   }
 
   bestSkill(skill) {

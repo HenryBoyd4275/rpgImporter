@@ -3,7 +3,17 @@
   "Key": "1C",
   "Description": "Towering trees, whose tops are lost in heavy gray mist, block out all save a death-gray light. The tree trunks almost touch. The thick, damp undergrowth presses in on you, making it impossible even to see one another at all times. The woods have the silence of a forgotten grave, yet exude the feeling of an unsounded scream.",
   "Image": "None",
+  "Hidden Description": {
+    "Passed": false,
+    "Trigger": "Party Perception-4 Passed",
+    "Description": "find a dead villager in the underbrush. He holds an envelope crumpled in his hand. The remains of his clothes are torn and raked with claw marks. Paw prints of many large wolves are pressed into the clay around the body. The man has obviously been dead for several days."
+  },
   "ContextActions": [
+    {
+      "Action": "Take the letter",
+      "Time": "1m",
+      "Effect": "Get Letter"
+    },
     {
       "Action": "Continue Into the Mists",
       "Time": "30m",
@@ -15,6 +25,6 @@
       "Effect": "GoTo 1Bb"
     }
   ]
-}
+  }
 
 

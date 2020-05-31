@@ -16,9 +16,9 @@
     "Social": 10
   },
   "Soul": {
-    "Essence": 10,
-    "Focus": 10,
-    "Reception": 0
+    "Essence": 8,
+    "Focus": 12,
+    "Reception": 7
   },
   "Advantages": ["Combat Reflexes", "High Pain Threshold", "Power Investure 2"],
   "Skills": {

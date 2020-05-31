@@ -26,6 +26,10 @@ export default function Viewport(props) {
         setTime(increaseTime(input.Time, time));
         goTo(effect[1]);
         break;
+      case "Get":
+        props.party.items.push(require(`./Items/${effect[1]}`));
+        console.log("letter?:",props.party.items[0].name);
+        break;
       default:
         console.log(`Command '${effect[0]}' not found`)
     }
@@ -50,7 +54,7 @@ export default function Viewport(props) {
         >
           {node.Description}
         </Box>
-        <Box height="24em" />
+        <Box height="18em" />
         <Contextbar currentNode={node} execute={execute}/>
       </Box>
       <PartyBar party={props.party}/>
