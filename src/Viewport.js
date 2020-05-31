@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Header } from "grommet";
+import { Box, Header, Image } from "grommet";
 import Contextbar from "./Contextbar";
 import PartyBar from "./PartyBar";
 import Clock from "./Clock.js";
@@ -14,7 +14,7 @@ export default function Viewport(props) {
       setNode(require(`./Nodes/${key}.json`));
     }
     else {
-      console.log("Could not find Node")
+      console.log("Could not find Node");
     }
   }
 
@@ -44,7 +44,6 @@ export default function Viewport(props) {
     >
       <Box pad="medium" height="100%" background="background">
         <Header align="center"><Box>Map</Box> {node.Name} <Clock currentTime={time} /></Header>
-        
         <Box
           pad="small"
           border={{ color: "highlight", size: "large" }}
@@ -54,7 +53,9 @@ export default function Viewport(props) {
         >
           {node.Description}
         </Box>
-        <Box height="18em" />
+        <Box height="18em" >
+          <Image src={node.Image}/>
+        </Box>
         <Contextbar currentNode={node} execute={execute}/>
       </Box>
       <PartyBar party={props.party}/>

@@ -5,7 +5,6 @@ export default function CharSheet(props) {
 
   return (
     <Box>
-    {props.char.name}
       <Box direction="row">
         <Box margin={{ right:"1em", left:"1em" }}>*portrait*<br />*portrait*<br />*portrait*<br />*portrait*<br />*portrait*<br /></Box>
         <Box margin={{ right: "1em", left: "1em" }}>

@@ -2,7 +2,7 @@
   "Name": "The Gates of Barovia",
   "Key": "1Ba",
   "Description": "As you approach the gates they screech open before you.",
-  "Image": "None",
+  "Image": "Ba",
   "ContextActions": [
     {
       "Action": "Pass through the Gates",

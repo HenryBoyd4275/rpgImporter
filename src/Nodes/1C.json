@@ -2,7 +2,7 @@
   "Name": "The Svalich Woods",
   "Key": "1C",
   "Description": "Towering trees, whose tops are lost in heavy gray mist, block out all save a death-gray light. The tree trunks almost touch. The thick, damp undergrowth presses in on you, making it impossible even to see one another at all times. The woods have the silence of a forgotten grave, yet exude the feeling of an unsounded scream.",
-  "Image": "None",
+  "Image": "C",
   "Hidden Description": {
     "Passed": false,
     "Trigger": "Party Perception-4 Passed",

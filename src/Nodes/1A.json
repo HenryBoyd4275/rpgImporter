@@ -2,7 +2,7 @@
   "Name": "Old Svalich Road",
   "Key": "1A",
   "Description": "Black pools of water stand like dark mirrors in and around the muddy roadway. Giant Trees loom on both sides of the road, their branches clawing at the mist.",
-  "Image": "None",
+  "Image": "require('./Images/A.png')",
   "ContextActions": [
     {
       "Action": "Continue down the Road",

@@ -2,7 +2,7 @@
   "Name": "The Mists",
   "Key": "1C",
   "Description": "The heavy mist increases, cloaking your surroundins totally. It seems to reach out at you, grasping your throat with a strange strength that only gets stronger the farther you go. You cannot breathe!",
-  "Image": "None",
+  "Image": "C",
   "ContextActions": [
     {
       "Action": "Turn back",

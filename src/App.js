@@ -21,7 +21,7 @@ function App() {
 
   return (
     <Grommet theme={mytheme}>
-      <header>RPG Importer</header>
+      <header>_RPG Importer</header>
       <Viewport party={pcs}/>
     </Grommet>
   );

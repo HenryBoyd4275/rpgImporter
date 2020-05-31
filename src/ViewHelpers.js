@@ -1,5 +1,3 @@
-
-
 export function increaseTime(arg, curTime) {
     let value = arg.slice(0, -1);
     let newTime = curTime;

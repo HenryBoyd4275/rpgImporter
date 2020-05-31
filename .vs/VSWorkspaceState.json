@@ -4,8 +4,9 @@
     "\\src",
     "\\src\\Chars",
     "\\src\\Chars\\Party",
+    "\\src\\Images",
     "\\src\\Nodes"
   ],
-  "SelectedNode": "\\src\\Viewport.js",
+  "SelectedNode": "\\src\\ViewHelpers.js",
   "PreviewInSolutionExplorer": false
 }
