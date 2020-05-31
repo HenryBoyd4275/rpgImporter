@@ -2,7 +2,7 @@
   "Name": "The Gates of Barovia",
   "Key": "1B",
   "Description": "Jutting from the impenetrable woods on both sides of the road, high stone buttresses loom up gray in the fog. Huge iron gates hang on the stonework. Dew clings with cold tenacity to the rusted bars. Two statues of armed guardians silently flank the gate. Their heads, missing from their shoulders, now lie among the weeds at their feet. They greet you only with silence.",
-  "Image": "require('./Images/B.png')",
+  "Image": "https://github.com/HenryBoyd4275/rpgImporter/blob/master/src/Images/B.png?raw=true",
   "ContextActions": [
     {
       "Action": "Approach the Gates",

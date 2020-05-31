@@ -2,7 +2,7 @@
   "Name": "The Gates of Barovia",
   "Key": "1Ba",
   "Description": "As you approach the gates they screech open before you.",
-  "Image": "Ba",
+  "Image": "https://github.com/HenryBoyd4275/rpgImporter/blob/master/src/Images/Ba.png?raw=true",
   "ContextActions": [
     {
       "Action": "Pass through the Gates",
