@@ -3,7 +3,7 @@ import { Box, Header, Image } from "grommet";
 import Contextbar from "./Contextbar";
 import PartyBar from "./PartyBar";
 import Clock from "./Clock.js";
-import { increaseTime, addDescription } from "./ViewHelpers";
+import { increaseTime, addDescription, checkAll, checkOne } from "./ViewHelpers";
 
 export default function Viewport(props) {
   const [node, setNode] = useState(require(`./Nodes/1A.json`));
@@ -19,11 +19,11 @@ export default function Viewport(props) {
     }
   }
 
-  function conditionalDescription() {
+  function check() {
     let result = [];
-    if (node.Conditional) {
-      node.Conditional.forEach((element, index) => {
-        execute(element.Trigger);
+    if (node.Check) {
+      node.Check.forEach(element => {
+        execute(element);
       })
     }
     return result;
@@ -33,12 +33,15 @@ export default function Viewport(props) {
     let effect = "";
     if (input.Effect) {
       effect = input.Effect.split(' ');
-    } else {
-      effect = input.split(' ');
+    } else if (input.Trigger) {
+      effect = input.Trigger.split(' ');
     }
     switch (effect[0]) {
       case "Check":
-        //if ( 3d6 < (props.party.bestAttribute(effect[1])) + effect[2]) { do a thing } else { do a different thing }
+        checkOne( effect[1], effect[2], effect[3], props.party, node, input.Result );
+        break;
+      case "CheckAll":
+        checkAll( effect[1], effect[2], effect[3], props.party, node, input.Result );
         break;
       case "GoTo":
         setTime(increaseTime(input.Time, time));
@@ -74,7 +77,7 @@ export default function Viewport(props) {
           align="center"
         >
           {node.Description}
-          {conditionalDescription(node)}
+          {check(node)}
           {addDescription(node)}
         </Box>
         <Box height="18em" >

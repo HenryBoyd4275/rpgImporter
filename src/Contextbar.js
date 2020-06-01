@@ -6,15 +6,20 @@ export default function Contextbar(props) {
   function printOptions() {
     let result = [];
     props.currentNode.ContextActions.forEach((element, index) => {
+      let print = true;
       if (element.If) {
-        if (props.currentNode.Show[element.If] && !props.currentNode.Show[element.Not]) {
-          result.push(<Box key={index} pad="xsmall" background="background"><Button label={element.Action} onClick={() => props.execute(element)} /></Box>);
+        let splitIf = element.If.split(' ');
+        if (!props.currentNode[splitIf[0]][splitIf[1]]) {
+          print = false;
         }
-      } else if (element.Not) {
-        if (!props.currentNode.Show[element.Not]) {
-          result.push(<Box key={index} pad="xsmall" background="background"><Button label={element.Action} onClick={() => props.execute(element)} /></Box>);
+      }
+      if (element.Not) {
+        let splitNot = element.Not.split(' ');
+        if (props.currentNode[splitNot[0]][splitNot[1]]) {
+          print = false;
         }
-      } else {
+      } 
+      if (print) {
         result.push(<Box key={index} pad="xsmall" background="background"><Button label={element.Action} onClick={() => props.execute(element)} /></Box>);
       }
     })

@@ -11,27 +11,27 @@
   "ContextActions": [
     {
       "Action": "Approach the Gates",
-      "Not": "0",
+      "Not": "Show 0",
       "Time": "1m",
       "Effect": "Show 0"
     },
     {
       "Action": "Pass through the Gates",
-      "If": "0",
-      "Not": "1",
+      "If": "Show 0",
+      "Not": "Show 1",
       "Time": "1m",
       "Effect": "Show 1"
     },
     {
       "Action": "Continue down the road",
       "Time": "2h",
-      "If": "1",
+      "If": "Show 1",
       "Effect": "todo"
     },
     {
       "Action": "Go Back through the woods",
       "Time": "1m",
-      "If": "1",
+      "If": "Show 1",
       "Effect": "GoTo 1C"
     }
 
