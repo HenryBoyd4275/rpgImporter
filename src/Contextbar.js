@@ -6,8 +6,17 @@ export default function Contextbar(props) {
   function printOptions() {
     let result = [];
     props.currentNode.ContextActions.forEach(element => {
-      console.log("here with", element);
-      result.push(<Box pad="xsmall" background="background"><Button label={element.Action} onClick={() => props.execute(element)} /></Box>);
+      if (element.If) {
+        if (props.currentNode.Show[element.If] && !props.currentNode.Show[element.Not]) {
+          result.push(<Box pad="xsmall" background="background"><Button label={element.Action} onClick={() => props.execute(element)} /></Box>);
+        }
+      } else if (element.Not) {
+        if (!props.currentNode.Show[element.Not]) {
+          result.push(<Box pad="xsmall" background="background"><Button label={element.Action} onClick={() => props.execute(element)} /></Box>);
+        }
+      } else {
+        result.push(<Box pad="xsmall" background="background"><Button label={element.Action} onClick={() => props.execute(element)} /></Box>);
+      }
     })
     return result;
   }

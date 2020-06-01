@@ -8,6 +8,7 @@ import { increaseTime } from "./ViewHelpers";
 export default function Viewport(props) {
   const [node, setNode] = useState(require(`./Nodes/1A.json`));
   const [time, setTime] = useState([0, 0, 0]);
+  const [render, setRender] = useState(0);
 
   function goTo(key) {
     if (`./Nodes/${key}.json`) {
@@ -18,6 +19,27 @@ export default function Viewport(props) {
     }
   }
 
+  function setShowArray(effect) {
+    let result = [];
+    for (let i=1; i < effect.length; i++) {
+      result.push(effect[i]);
+    }
+    return result;
+  }
+
+  function addDescription() {
+    let result = [];
+    if (node.Additional) {
+      node.Additional.forEach((element, index) => {
+        if (node.Show[index]) {
+          result.push(<br />)
+          result.push(element);
+        }
+      })
+    }
+    return result;
+  }
+
   function execute(input) {
     let effect = input.Effect.split(' ');
 
@@ -25,6 +47,12 @@ export default function Viewport(props) {
       case "GoTo":
         setTime(increaseTime(input.Time, time));
         goTo(effect[1]);
+        break;
+      case "Show":
+        console.log(node.Show)
+        node.Show[effect[1]] = true;
+        setRender(render+1);
+        console.log(node.Show)
         break;
       case "Get":
         props.party.items.push(require(`./Items/${effect[1]}`));
@@ -48,13 +76,14 @@ export default function Viewport(props) {
           pad="small"
           border={{ color: "highlight", size: "large" }}
           width="100%"
-          height="8em"
+          height="10em"
           align="center"
         >
           {node.Description}
+          {addDescription()}
         </Box>
         <Box height="18em" >
-          <Image src={node.Image}/>
+          <Image src={node.Image} fit="contain"/>
         </Box>
         <Contextbar currentNode={node} execute={execute}/>
       </Box>

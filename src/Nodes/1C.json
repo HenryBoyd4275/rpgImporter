@@ -2,8 +2,8 @@
   "Name": "The Svalich Woods",
   "Key": "1C",
   "Description": "Towering trees, whose tops are lost in heavy gray mist, block out all save a death-gray light. The tree trunks almost touch. The thick, damp undergrowth presses in on you, making it impossible even to see one another at all times. The woods have the silence of a forgotten grave, yet exude the feeling of an unsounded scream.",
-  "Image": "https://github.com/HenryBoyd4275/rpgImporter/blob/master/src/Images/C.png",
-  "Hidden Description": {
+  "Image": "https://github.com/HenryBoyd4275/rpgImporter/blob/master/src/Images/C.png?raw=true",
+  "Additional": {
     "Passed": false,
     "Trigger": "Party Perception-4 Passed",
     "Description": "find a dead villager in the underbrush. He holds an envelope crumpled in his hand. The remains of his clothes are torn and raked with claw marks. Paw prints of many large wolves are pressed into the clay around the body. The man has obviously been dead for several days."
