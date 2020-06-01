@@ -5,7 +5,7 @@
   "Show": [false , false],
   "Additional": [
     "As you approach the gates they screech open before you.",
-    "Once you are through the gate screech shut again behond you."
+    "Once you are through the gate screech shut again behind you."
   ],
   "Image": "https://github.com/HenryBoyd4275/rpgImporter/blob/master/src/Images/B.png?raw=true",
   "ContextActions": [

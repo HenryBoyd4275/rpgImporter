@@ -1,3 +1,5 @@
+import React from "react";
+
 export function increaseTime(arg, curTime) {
     let value = arg.slice(0, -1);
     let newTime = curTime;
@@ -22,6 +24,18 @@ export function increaseTime(arg, curTime) {
       newTime[0] += 1;
       newTime[1] -= 60;
   }
-  console.log(newTime);
     return (newTime)
+}
+
+export function addDescription(node) {
+  let result = [];
+  if (node.Additional) {
+    node.Additional.forEach((element, index) => {
+      if (node.Show[index]) {
+        result.push(<br />);
+        result.push(element);
+      }
+    })
   }
+  return result;
+}

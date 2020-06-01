@@ -9,23 +9,23 @@ export default function CharSheet(props) {
         <Box margin={{ right:"1em", left:"1em" }}>*portrait*<br />*portrait*<br />*portrait*<br />*portrait*<br />*portrait*<br /></Box>
         <Box margin={{ right: "1em", left: "1em" }}>
         <b>Body</b>
-          Strength: {props.char.Body.Strength}<br/>
-          Agility: {props.char.Body.Agility}<br/>
-          Coordination: {props.char.Body.Coordination}<br/>
-          Fitness: {props.char.Body.Fitness}
+          Strength: {props.char.Attributes.Strength}<br/>
+          Agility: {props.char.Attributes.Agility}<br/>
+          Coordination: {props.char.Attributes.Coordination}<br/>
+          Fitness: {props.char.Attributes.Fitness}
         </Box>
         <Box margin={{ right: "1em", left: "1em" }}>
           <b>Mind</b>
-          Perception: {props.char.Mind.Perception}<br />
-          Intelligence: {props.char.Mind.Intelligence}<br />
-          Resolve: {props.char.Mind.Resolve}<br />
-          Social: {props.char.Mind.Social}
+          Perception: {props.char.Attributes.Perception}<br />
+          Intelligence: {props.char.Attributes.Intelligence}<br />
+          Resolve: {props.char.Attributes.Resolve}<br />
+          Social: {props.char.Attributes.Social}
         </Box>
         <Box margin={{ right: "1em", left: "1em" }}>
           <b>Soul</b>
-          Essence: {props.char.Soul.Essence}<br />
-          Focus: {props.char.Soul.Focus}<br />
-          Reception: {props.char.Soul.Reception}
+          Essence: {props.char.Attributes.Essence}<br />
+          Focus: {props.char.Attributes.Focus}<br />
+          Reception: {props.char.Attributes.Reception}
         </Box>
         *Equipment*
       </Box>

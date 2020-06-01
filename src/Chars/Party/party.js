@@ -18,8 +18,8 @@ export default class Party {
   bestAttribute(attribute) {
     let temp = 0;
     this.chars.forEach(element => {
-      if (element.attribute > temp) {
-        temp = element.attribute;
+      if (element.Attributes[attribute] > temp) {
+        temp = element.Attributes[attribute];
       }
     })
     return temp;

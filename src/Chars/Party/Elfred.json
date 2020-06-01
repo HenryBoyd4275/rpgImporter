@@ -3,19 +3,15 @@
   "race": "Elf",
   "portrait": "",
   "image": "",
-  "Body": {
+  "Attributes": {
     "Strength": 11,
     "Agility": 12,
     "Coordination": 13,
-    "Fitness": 12
-  },
-  "Mind": {
+    "Fitness": 12,
     "Perception": 14,
     "Intelligence": 14,
     "Resolve": 10,
-    "Social": 8
-  },
-  "Soul": {
+    "Social": 8,
     "Essence": 10,
     "Focus": 11,
     "Reception": 10

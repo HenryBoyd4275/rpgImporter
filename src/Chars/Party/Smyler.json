@@ -3,19 +3,15 @@
   "race": "Human",
   "portrait": "",
   "image": "",
-  "Body": {
+  "Attributes": {
     "Strength": 10,
     "Agility": 13,
     "Coordination": 14,
-    "Fitness": 12
-  },
-  "Mind": {
+    "Fitness": 12,
     "Perception": 14,
     "Intelligence": 12,
     "Resolve": 9,
-    "Social": 11
-  },
-  "Soul": {
+    "Social": 11,
     "Essence": 2,
     "Focus": 0,
     "Reception": 0

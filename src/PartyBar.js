@@ -5,9 +5,9 @@ import CharSheet from './CharSheet.js';
 
 function partyTabs(party) {
   let result = [];
-  party.chars.forEach(element => {
+  party.chars.forEach((element, index)=> {
     result.push(
-      <Tab title={element.name}>
+      <Tab key={index} title={element.name}>
         <Box
           pad="small"
           width="100%"
@@ -19,6 +19,7 @@ function partyTabs(party) {
   return result;
 }
 
+/*
 function printInventory(party) {
   let result = [];
   party.items.forEach(element => {
@@ -26,6 +27,7 @@ function printInventory(party) {
   })
   return result;
 }
+*/
 
 export default function PartyBar(props) {
 
