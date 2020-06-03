@@ -1,3 +1,5 @@
+//bottom UI element that holds character sheets and such
+
 import React from "react";
 import { Box, Tabs, Tab } from "grommet";
 import { Services } from "grommet-icons";

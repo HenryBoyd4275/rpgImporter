@@ -1,3 +1,4 @@
+//This displays the time, a peice of state in viewport. This component should probably own that state.
 import React from "react";
 import { Box } from 'grommet';
 

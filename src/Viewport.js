@@ -1,3 +1,5 @@
+//main viewport that hold a lot of things. Should probabyl spliut off some more functions to help
+
 import React, { useState } from "react";
 import { Box, Header, Image } from "grommet";
 import Contextbar from "./Contextbar";
@@ -21,42 +23,61 @@ export default function Viewport(props) {
 
   function check() {
     let result = [];
-    if (node.Check) {
+    if (node.Check && !node.Checked) {
       node.Check.forEach(element => {
-        execute(element);
+        let effect = element.Trigger.split(' ');
+        switch (effect[0]) {
+          case "Check":
+            checkOne(effect[1], effect[2], effect[3], props.party, node, element.Result);
+            break;
+          case "CheckAll":
+            checkAll(effect[1], effect[2], effect[3], props.party, node, element.Result);
+            break;
+          default:
+            console.log(`I don't know how to ${element}`);
+        }
       })
     }
     return result;
   }
 
-  function execute(input) {
-    let effect = "";
-    if (input.Effect) {
-      effect = input.Effect.split(' ');
-    } else if (input.Trigger) {
-      effect = input.Trigger.split(' ');
-    }
+  function executeSingle(input, inputTime) {
+    let effect = input.split(' ');
     switch (effect[0]) {
-      case "Check":
-        checkOne( effect[1], effect[2], effect[3], props.party, node, input.Result );
-        break;
-      case "CheckAll":
-        checkAll( effect[1], effect[2], effect[3], props.party, node, input.Result );
-        break;
       case "GoTo":
-        setTime(increaseTime(input.Time, time));
+        setTime(increaseTime(inputTime, time));
         goTo(effect[1]);
         break;
       case "Show":
+        setTime(increaseTime(inputTime, time));
         node.Show[effect[1]] = true;
-        setRender(render+1);
+        setRender(render + 1);
+        break;
+      case "Hide":
+        setTime(increaseTime(inputTime, time));
+        node.Show[effect[1]] = false;
+        setRender(render + 1);
         break;
       case "Get":
         props.party.items.push(require(`./Items/${effect[1]}`));
-        console.log("letter?:",props.party.items[0].name);
+        console.log("letter?:", props.party.items[0].name);
         break;
       default:
-        console.log(`Command '${effect[0]}' not found`)
+        console.log(`Command '${effect[0]}' not found`);
+    }
+  }
+
+  function executeMultiple(input){
+    input.Effect.forEach(element => {
+      executeSingle(element, input.Time);
+    })
+  }
+
+  function execute(input) {
+    if (Array.isArray(input.Effect)) {
+      executeMultiple(input)
+    } else {
+      executeSingle(input.Effect, input.Time);
     }
   }
 
@@ -68,7 +89,7 @@ export default function Viewport(props) {
       direction="column"
     >
       <Box pad="medium" height="100%" background="background">
-        <Header align="center"><Box>Map</Box> {node.Name} <Clock currentTime={time} /></Header>
+        <Header align="center"><Box>*Map Button here?*</Box> {node.Name} <Clock currentTime={time} /></Header>
         <Box
           pad="small"
           border={{ color: "highlight", size: "large" }}

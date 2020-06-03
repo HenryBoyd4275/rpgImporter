@@ -1,3 +1,5 @@
+//helper functions for Viewport
+
 import React from "react";
 
 export function increaseTime(arg, curTime) {
@@ -67,6 +69,7 @@ export function checkOne(type, target, modifier, party, node, result) {
   } else {
     console.log("don't know how to check", type);
   }
+  node.Checked = true;
 }
 
 export function checkAll(type, target, modifier, party, node, result) {
@@ -86,5 +89,5 @@ export function checkAll(type, target, modifier, party, node, result) {
       console.log("Don't know how to check", type);
     }
   })
-
+  node.Checked = true;
 }

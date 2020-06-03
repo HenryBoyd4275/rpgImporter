@@ -1,3 +1,5 @@
+//Displays Character information. Nothing here causes a render.
+
 import React from "react";
 import { Box } from 'grommet';
 

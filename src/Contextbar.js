@@ -1,3 +1,5 @@
+//display the available options to the player
+
 import React from "react";
 import { Box, Grid, Button } from "grommet";
 
@@ -38,6 +40,7 @@ export default function Contextbar(props) {
       <Grid
         rows={["fill"]}
         columns={{
+          count: 3,
           size: "auto"
         }}
         gap="small"

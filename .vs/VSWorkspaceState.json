@@ -3,10 +3,12 @@
     "",
     "\\src",
     "\\src\\Chars",
+    "\\src\\Chars\\NPC",
     "\\src\\Chars\\Party",
     "\\src\\Images",
+    "\\src\\Items",
     "\\src\\Nodes"
   ],
-  "SelectedNode": "\\src\\Chars\\Party\\Bornstark.json",
+  "SelectedNode": "\\src\\Contextbar.js",
   "PreviewInSolutionExplorer": false
 }
