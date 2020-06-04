@@ -1,7 +1,7 @@
 {
   "name": "Elfred",
   "race": "Elf",
-  "portrait": "",
+  "portrait": "elf",
   "image": "",
   "Attributes": {
     "Strength": 11,

@@ -1,8 +1,8 @@
 {
   "name": "Bornstark vonHaus",
   "race": "Human",
-  "portrait": "none",
-  "image": "none",
+  "portrait": "BS",
+  "image": "",
   "Attributes": {
     "Strength": 17,
     "Agility": 11,

@@ -1,14 +1,14 @@
 //Displays Character information. Nothing here causes a render.
 
 import React from "react";
-import { Box } from 'grommet';
+import { Box, Image } from 'grommet';
 
 export default function CharSheet(props) {
 
   return (
     <Box>
       <Box direction="row">
-        <Box margin={{ right:"1em", left:"1em" }}>*portrait*<br />*portrait*<br />*portrait*<br />*portrait*<br />*portrait*<br /></Box>
+        <Box margin={{ right:"1em", left:"1em" }}><Image fit="cover"/></Box>
         <Box margin={{ right: "1em", left: "1em" }}>
         <b>Body</b>
           Strength: {props.char.Attributes.Strength}<br/>
