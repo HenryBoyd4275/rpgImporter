@@ -1,7 +1,7 @@
 {
   "name": "Elfred",
   "race": "Elf",
-  "portrait": "elf",
+  "portrait": "https://github.com/HenryBoyd4275/rpgImporter/blob/master/src/Images/Elf.png?raw=true",
   "image": "",
   "Attributes": {
     "Strength": 11,
@@ -16,7 +16,7 @@
     "Focus": 11,
     "Reception": 10
   },
-  "Advantages": ["Combat Reflexes", "Magery 2"],
+  "Advantages": [ "Combat Reflexes", "Magery 2" ],
   "Skills": {
     "Broadsword": 16,
     "Dance": 15,

@@ -12,7 +12,7 @@
   "Check": [
     {
       "Result":  "Show 0",
-      "Trigger": "CheckAll Attribute Perception -4"
+      "Trigger": "CheckAll Attribute Perception -2"
     }
   ],
   "ContextActions": [

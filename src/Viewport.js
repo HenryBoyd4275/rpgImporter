@@ -60,7 +60,6 @@ export default function Viewport(props) {
         break;
       case "Get":
         props.party.items.push(require(`./Items/${effect[1]}`));
-        console.log("letter?:", props.party.items[0].name);
         break;
       default:
         console.log(`Command '${effect[0]}' not found`);

@@ -1,7 +1,7 @@
 //bottom UI element that holds character sheets and such
 
 import React from "react";
-import { Box, Tabs, Tab } from "grommet";
+import { Box, Tabs, Tab, Anchor } from "grommet";
 import { Services } from "grommet-icons";
 import CharSheet from './CharSheet.js';
 
@@ -21,21 +21,19 @@ function partyTabs(party) {
   return result;
 }
 
-/*
+
 function printInventory(party) {
   let result = [];
   party.items.forEach(element => {
-    result.push(element.name)
+    result.push(<Anchor color="brand"><span title={element.Description}>{element.name}</span></Anchor>)
   })
   return result;
 }
-*/
+
 
 export default function PartyBar(props) {
 
-  
-
-  return (
+    return (
     <Tabs margin={{ top: "-3em" }}>
       <Tab title="PartyMain">
         <Box
@@ -43,7 +41,7 @@ export default function PartyBar(props) {
           height="6em"
           width="100%"
         >
-          Some sort of inventory button
+          Items: {printInventory(props.party)}  
         </Box>
       </Tab>
       {partyTabs(props.party)}

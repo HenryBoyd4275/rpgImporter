@@ -1,7 +1,7 @@
 {
   "name": "Smyler",
   "race": "Human",
-  "portrait": "smyle",
+  "portrait": "https://github.com/HenryBoyd4275/rpgImporter/blob/master/src/Images/Smyle.png?raw=true",
   "image": "",
   "Attributes": {
     "Strength": 10,
@@ -16,7 +16,7 @@
     "Focus": 0,
     "Reception": 0
   },
-  "Advantages": ["Combat Reflexes", "Luck"],
+  "Advantages": [ "Combat Reflexes", "Luck" ],
   "Skills": {
     "Knife": 16,
     "Streetwise": 15,

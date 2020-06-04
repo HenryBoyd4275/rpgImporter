@@ -1,10 +1,12 @@
 //clas which collects and manages information for characters in party
 
 export default class Party {
-
+  
+  items = [];
+  
   constructor(chars) {
     this.chars = chars;
-    this.items = [];
+
   }
 
   bestSkill(skill) {

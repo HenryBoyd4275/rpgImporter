@@ -8,7 +8,7 @@ export default function CharSheet(props) {
   return (
     <Box>
       <Box direction="row">
-        <Box margin={{ right:"1em", left:"1em" }}><Image fit="cover"/></Box>
+        <Box margin={{ right: "1em", left: "1em" }}><Image src={props.char.portrait} fit="cover"/></Box>
         <Box margin={{ right: "1em", left: "1em" }}>
         <b>Body</b>
           Strength: {props.char.Attributes.Strength}<br/>

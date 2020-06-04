@@ -1,13 +1,13 @@
 {
   "name": "Wil",
   "race": "Human",
-  "portrait": "wil",
-  "image":  "",
+  "portrait": "https://github.com/HenryBoyd4275/rpgImporter/blob/master/src/Images/Wil2.png?raw=true",
+  "image": "",
   "Attributes": {
     "Strength": 12,
     "Agility": 10,
     "Coordination": 12,
-    "Fitness":  12,
+    "Fitness": 12,
     "Perception": 11,
     "Intelligence": 11,
     "Resolve": 13,
@@ -16,7 +16,7 @@
     "Focus": 12,
     "Reception": 7
   },
-  "Advantages": ["Combat Reflexes", "High Pain Threshold", "Power Investure 2"],
+  "Advantages": [ "Combat Reflexes", "High Pain Threshold", "Power Investure 2" ],
   "Skills": {
     "Axe/Mace": 15,
     "Shield": 14,

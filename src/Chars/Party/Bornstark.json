@@ -1,7 +1,7 @@
 {
   "name": "Bornstark vonHaus",
   "race": "Human",
-  "portrait": "BS",
+  "portrait": "https://github.com/HenryBoyd4275/rpgImporter/blob/master/src/Images/BS.png?raw=true",
   "image": "",
   "Attributes": {
     "Strength": 17,
@@ -16,7 +16,7 @@
     "Focus": 0,
     "Reception": 0
   },
-  "Advantages": ["Combat Reflexes", "High Pain Threshhold"],
+  "Advantages": [ "Combat Reflexes", "High Pain Threshhold" ],
   "Skills": {
     "Two-Handed_Sword": 18,
     "Soldier": 14,
