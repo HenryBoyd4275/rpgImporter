@@ -32,7 +32,7 @@ export default function Contextbar(props) {
     <Box
       pad="small"
       gap="large"
-      border={{ color: "highlight", size: "large" }}
+      border={{ color: "dark1", size: "large" }}
       height="8em"
       width="100%"
       margin={{ bottom: "2em" }}

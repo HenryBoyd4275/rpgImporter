@@ -12,9 +12,10 @@ function App() {
     global: {
       colors: {
         main: "gray",
-        highlight: "black",
+        dark1: "black",
         background: "#100d14",
-        text: "#9994a1"
+        text: "#9994a1",
+        brand: "red"
       }
     }
   };

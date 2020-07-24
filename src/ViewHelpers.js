@@ -1,6 +1,7 @@
 //helper functions for Viewport
 
 import React from "react";
+import { Text } from "grommet";
 
 export function increaseTime(arg, curTime) {
     let value = arg.slice(0, -1);
@@ -44,8 +45,7 @@ export function addDescription(node) {
   if (node.Additional) {
     node.Additional.forEach((element, index) => {
       if (node.Show[index]) {
-        result.push(<br />);
-        result.push(element);
+        result.push(<Text color="brand" weight="bold"> {element} </Text>);
       }
     })
   }

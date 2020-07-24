@@ -25,7 +25,7 @@ function partyTabs(party) {
 function printInventory(party) {
   let result = [];
   party.items.forEach(element => {
-    result.push(<Anchor color="brand"><span title={element.Description}>{element.name}</span></Anchor>)
+    result.push(<Anchor key={element} color="brand"><span title={element.Description}>{element.name}</span></Anchor>)
   })
   return result;
 }

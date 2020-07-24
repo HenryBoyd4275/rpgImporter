@@ -2,38 +2,43 @@
   "Name": "The Gates of Barovia",
   "Key": "1B",
   "Description": "Jutting from the impenetrable woods on both sides of the road, high stone buttresses loom up gray in the fog. Huge iron gates hang on the stonework. Dew clings with cold tenacity to the rusted bars. Two statues of armed guardians silently flank the gate. Their heads, missing from their shoulders, now lie among the weeds at their feet. They greet you only with silence.",
-  "Show": [false , false],
+  "Show": [ false, false ],
   "Additional": [
     "As you approach the gates they screech open before you.",
     "Once you are through the gate screech shut again behind you."
   ],
   "Image": "https://github.com/HenryBoyd4275/rpgImporter/blob/master/src/Images/B.png?raw=true",
-  "ContextActions": [
-    {
-      "Action": "Approach the Gates",
-      "Not": "Show 0",
-      "Time": "1m",
-      "Effect": "Show 0"
-    },
-    {
-      "Action": "Pass through the Gates",
-      "If": "Show 0",
-      "Not": "Show 1",
-      "Time": "1m",
-      "Effect": "Show 1"
-    },
-    {
-      "Action": "Continue down the road",
-      "Time": "2h",
-      "If": "Show 1",
-      "Effect": "todo"
-    },
-    {
-      "Action": "Go Back through the woods",
-      "Time": "1m",
-      "If": "Show 1",
-      "Effect": "GoTo 1C"
-    }
+  "AltImage": {
+    "If": "Show 0",
+    "Not":  "Show 1",
+    "Image": "https://github.com/HenryBoyd4275/rpgImporter/blob/master/src/Images/Ba.png?raw=true" 
+  },
+    "ContextActions": [
+      {
+        "Action": "Approach the Gates",
+        "Not": "Show 0",
+        "Time": "1m",
+        "Effect": "Show 0"
+      },
+      {
+        "Action": "Pass through the Gates",
+        "If": "Show 0",
+        "Not": "Show 1",
+        "Time": "1m",
+        "Effect": "Show 1"
+      },
+      {
+        "Action": "Continue down the road",
+        "Time": "2h",
+        "If": "Show 1",
+        "Effect": "todo"
+      },
+      {
+        "Action": "Go Back through the woods",
+        "Time": "1m",
+        "If": "Show 1",
+        "Effect": "GoTo 1C"
+      }
 
-  ]
-}
+    ]
+  }

@@ -1,7 +1,7 @@
 //main viewport that hold a lot of things. Should probabyl spliut off some more functions to help
 
 import React, { useState } from "react";
-import { Box, Header, Image } from "grommet";
+import { Box, Header, Image, Text } from "grommet";
 import Contextbar from "./Contextbar";
 import PartyBar from "./PartyBar";
 import Clock from "./Clock.js";
@@ -80,9 +80,32 @@ export default function Viewport(props) {
     }
   }
 
+  function displayImage() {
+    let image = node.Image;
+    let alt = false;
+    if (node.AltImage) {
+      if (node.AltImage.If) {
+        let splitIf = node.AltImage.If.split(' ');
+        if (node[splitIf[0]][splitIf[1]]) {
+          alt=true;
+        }
+      }
+      if (node.AltImage.Not) {
+        let splitIf = node.AltImage.Not.split(' ');
+        if (node[splitIf[0]][splitIf[1]]) {
+          alt = false;
+        }
+      }
+    }
+    if (alt) {
+      image = node.AltImage.Image;
+    }
+    return image
+  }
+
   return (
     <Box
-      border={{ color: "highlight", size: "large" }}
+      border={{ color: "dark1", size: "large" }}
       width="100%"
       height="100%"
       direction="column"
@@ -91,17 +114,16 @@ export default function Viewport(props) {
         <Header align="center"><Box>*Map Button here?*</Box> {node.Name} <Clock currentTime={time} /></Header>
         <Box
           pad="small"
-          border={{ color: "highlight", size: "large" }}
+          border={{ color: "dark1", size: "large" }}
           width="100%"
           height="11em"
-          align="center"
         >
-          {node.Description}
+          <Text>{node.Description}</Text>
           {check(node)}
           {addDescription(node)}
         </Box>
         <Box height="18em" >
-          <Image src={node.Image} fit="contain"/>
+          <Image src={displayImage()} fit="contain"/>
         </Box>
         <Contextbar currentNode={node} execute={execute}/>
       </Box>
