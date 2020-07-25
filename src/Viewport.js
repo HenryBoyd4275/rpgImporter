@@ -8,7 +8,7 @@ import Clock from "./Clock.js";
 import { increaseTime, addDescription, checkAll, checkOne } from "./ViewHelpers";
 
 export default function Viewport(props) {
-  const [node, setNode] = useState(require(`./Nodes/1A.json`));
+  const [node, setNode] = useState(require(`./Nodes/0.json`));
   const [time, setTime] = useState([0, 0, 0]);
   const [render, setRender] = useState(0);
 

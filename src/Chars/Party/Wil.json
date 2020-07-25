@@ -38,5 +38,10 @@
     "Armour": 15,
     "Bladeturning": 15,
     "Missile Shield": 15
+  },
+  "Equipment": {
+    "Armour": "Full Plate",
+    "Weapon": "Mace",
+    "Offhand": "Kite Shield"
   }
 }

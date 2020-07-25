@@ -1,0 +1,13 @@
+{
+  "Name": "The Beginning",
+  "Key": "0",
+  "Description": "Several days ago, your party of adventurers recieved a letter, delivered by a man in brightly coloured clothes. It beckoned you to the land of Barovia, where the Burgomaster has promised you a rich reward if you can protect Ireena Kolyana from a deadly evil. Thus you find yourselves on the Old Svalich road, just outside of Barovia",
+  "Image": "",
+  "ContextActions": [
+    {
+      "Action": "Adventure Forth!",
+      "Time": "0m",
+      "Effect": "GoTo 1A"
+    }
+  ]
+}

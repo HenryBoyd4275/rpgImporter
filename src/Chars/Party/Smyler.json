@@ -29,5 +29,10 @@
     "Survival": 13,
     "Climbing": 14,
     "Insight": 14
+  },
+  "Equipment": {
+    "Armour": "Light Plate",
+    "Weapon": "Rondel",
+    "Offhand": "none"
   }
 }

@@ -29,7 +29,12 @@ export default function CharSheet(props) {
           Focus: {props.char.Attributes.Focus}<br />
           Reception: {props.char.Attributes.Reception}
         </Box>
-        *Equipment*
+        <Box margin={{ right: "1em", left: "1em" }}>
+          <b>Equipment</b>
+          Armour: {props.char.Equipment.Armour}<br/>
+          Weapon: {props.char.Equipment.Weapon}<br/>
+          Offhand: {props.char.Equipment.Offhand}<br/>
+      </Box>
       </Box>
     </Box>
     );

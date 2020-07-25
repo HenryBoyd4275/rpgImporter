@@ -27,5 +27,11 @@
     "Wrestling": 13,
     "Boxing": 14,
     "Crossbow": 12
+  },
+  "Equipment": {
+    "Armour": "Full Plate",
+    "Weapon": "Zweihander",
+    "Offhand": "(Zweihander)"
   }
+
 }

@@ -36,5 +36,10 @@
     "Throw": 15,
     "Throw Weapon": 15,
     "Slow Fall": 15
+  },
+  "Equipment": {
+    "Armour": "Munition Plate",
+    "Weapon": "Longsword",
+    "Offhand": "none"
   }
 }
