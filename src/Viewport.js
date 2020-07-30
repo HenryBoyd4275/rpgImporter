@@ -41,28 +41,53 @@ export default function Viewport(props) {
     return result;
   }
 
+  function conditionalExecute(input, inputTime){
+    let condition = input[0].split(' ');
+    if (condition[0] === 'Global') {
+      if (condition[1] === 'If') {
+        if (props.globalTriggers[condition[2]]) {
+          executeSingle(input[1], inputTime)
+        }
+      } else if (condition[1] === 'Not') {
+        if (!props.globalTriggers[condition[2]]) {
+          executeSingle(input[1], inputTime)
+        }
+      }
+    } else {
+      console.log("local contitional execute tbd");
+    }
+  }
+
   function executeSingle(input, inputTime) {
-    let effect = input.split(' ');
-    switch (effect[0]) {
-      case "GoTo":
-        setTime(increaseTime(inputTime, time));
-        goTo(effect[1]);
-        break;
-      case "Show":
-        setTime(increaseTime(inputTime, time));
-        node.Show[effect[1]] = true;
-        setRender(render + 1);
-        break;
-      case "Hide":
-        setTime(increaseTime(inputTime, time));
-        node.Show[effect[1]] = false;
-        setRender(render + 1);
-        break;
-      case "Get":
-        props.party.items.push(require(`./Items/${effect[1]}`));
-        break;
-      default:
-        console.log(`Command '${effect[0]}' not found`);
+    if (Array.isArray(input)) {
+      conditionalExecute(input, inputTime)
+    } else {
+      let effect = input.split(' ');
+      switch (effect[0]) {
+        case "GoTo":
+          setTime(increaseTime(inputTime, time));
+          goTo(effect[1]);
+          break;
+        case "Show":
+          setTime(increaseTime(inputTime, time));
+          node.Show[effect[1]] = true;
+          setRender(render + 1);
+          break;
+        case "Hide":
+          setTime(increaseTime(inputTime, time));
+          node.Show[effect[1]] = false;
+          setRender(render + 1);
+          break;
+        case "Get":
+          props.party.items.push(require(`./Items/${effect[1]}`));
+          break;
+        case "Spend":
+          props.party.wealth -= effect[1];
+          setRender(render + 1);
+          break;
+        default:
+          console.log(`Command '${effect[0]}' not found`);
+      }
     }
   }
 
@@ -125,7 +150,7 @@ export default function Viewport(props) {
         <Box height="18em" >
           <Image src={displayImage()} fit="contain"/>
         </Box>
-        <Contextbar currentNode={node} execute={execute}/>
+        <Contextbar party={props.party} currentNode={node} execute={execute}/>
       </Box>
       <PartyBar party={props.party}/>
     </Box>

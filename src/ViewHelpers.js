@@ -45,7 +45,7 @@ export function addDescription(node) {
   if (node.Additional) {
     node.Additional.forEach((element, index) => {
       if (node.Show[index]) {
-        result.push(<Text color="brand" weight="bold"> {element} </Text>);
+        result.push(<Text key={index} color="brand" weight="bold"> {element} </Text>);
       }
     })
   }
@@ -79,11 +79,15 @@ export function checkAll(type, target, modifier, party, node, result) {
       if (diceRoll() < (element.Attributes[target] + 1 * modifier)) {
         console.log(`${type}.${target} ${modifier} check passed by ${element.name}`)
         node[result[0]][result[1]] = true;
+      } else {
+        console.log(`${type}.${target} ${modifier} check failed by ${element.name}`)
       }
     } else if (type === "Skill") {
       if (diceRoll() < (element.Skillss[target] + 1 * modifier)) {
         console.log(`${type}.${target} ${modifier} check passed by ${element.name}`)
         node[result[0]][result[1]] = true;
+      } else {
+        console.log(`${type}.${target} ${modifier} check failed by ${element.name}`)
       }
     } else {
       console.log("Don't know how to check", type);

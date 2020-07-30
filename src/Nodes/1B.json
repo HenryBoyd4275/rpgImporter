@@ -29,9 +29,9 @@
       },
       {
         "Action": "Continue down the road",
-        "Time": "2h",
+        "Time": "0m",
         "If": "Show 1",
-        "Effect": "todo"
+        "Effect": "GoTo 1BE"
       },
       {
         "Action": "Go Back through the woods",

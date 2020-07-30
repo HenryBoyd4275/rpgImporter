@@ -1,0 +1,64 @@
+{
+  "Name": "Bildrath's Mercantile",
+  "Key": "1E1",
+  "Description": "The sparse light from this building spills out from behind drawn heavy curtains. A sign over the door creaks on its hinges, proclaiming this \"Bildrath's Mercantile.\"\nBildrath stands behind the counter and offers you his wares, at ten times their regular price",
+  "Image": "https://vignette.wikia.nocookie.net/ravenloft/images/7/77/Screen_Shot_2017-02-06_at_7.58.48_PM.png/revision/latest?cb=20170207020203",
+  "Show": [ false ],
+  "Additional": [
+    "Bildrath simply states: \"If you want it badly enough, you'll pay for it - because you certainly won't be taking your business elsewhere.\""
+  ],
+  "ContextActions": [
+    {
+      "Action": "Complain about the Prices",
+      "Time": "0m",
+      "Effect": "Show 0"
+    },
+    {
+      "Action": "Purchase 10ft. Pole (1gp)",
+      "Time": "1m",
+      "If": "Wealth 1",
+      "Effect": [ "Get 10ftPole", "Spend 1" ]
+    },
+    {
+      "Action": "Purchase Crowbar (20gp)",
+      "Time": "1m",
+      "If": "Wealth 20",
+      "Effect": [ "Get Crowbar", "Spend 20" ]
+    },
+    {
+      "Action": "Purchase Rope (10gp)",
+      "Time": "1m",
+      "If": "Wealth 10",
+      "Effect": [ "Get Rope", "Spend 10" ]
+    },
+    {
+      "Action": "Purchase Grappling Hook (20gp)",
+      "Time": "1m",
+      "If": "Wealth 20",
+      "Effect": [ "Get GrapplingHook", "Spend 20" ]
+    },
+    {
+      "Action": "Purchase Torches (10gp)",
+      "Time": "1m",
+      "If": "Wealth 10",
+      "Effect": [ "Get Torches", "Spend 10" ]
+    },
+    {
+      "Action": "Purchse Iron Spikes (10gp)",
+      "Time": "1m",
+      "If": "Wealth 10",
+      "Effect": [ "Get IronSpikes", "Spend 10" ]
+    },
+    {
+      "Action": "Purchse Waterskin (2gp)",
+      "Time": "1m",
+      "If": "Wealth 2",
+      "Effect": [ "Get Waterskin", "Spend 2" ]
+    },
+    {
+      "Action": "Leave",
+      "Time": "1m",
+      "Effect": "GoTo 1E"
+    }
+  ]
+}

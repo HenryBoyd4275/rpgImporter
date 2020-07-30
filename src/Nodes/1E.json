@@ -1,0 +1,43 @@
+{
+  "Name": "The Village of Barovia",
+  "Key": "1E",
+  "Description": "Tall shapes loom out of the dense fog that surrounds everything. The muddy ground underfoot gives way to slick, wet cobblestones. The tall shapes become recognizable as the dwellings of the village of Barovia. The windows of each house stare out from pools of black nothingness. No sound cuts the silence except for a single mournful sobbing mat echoes through the streets from a distance.",
+  "Image": "https://vignette.wikia.nocookie.net/ravenloft/images/7/77/Screen_Shot_2017-02-06_at_7.58.48_PM.png/revision/latest?cb=20170207020203",
+  "ContextActions": [
+    {
+      "Action": "Visit Bildrath's Mercantile",
+      "Time": "1m",
+      "Effect": "GoTo 1E1"
+    },
+    {
+      "Action": "Visit the 'Blood of the Vine' Tavern",
+      "Time": "1m",
+      "Effect": "GoTo 1E2"
+    },
+    {
+      "Action": "Search for the source of the sobbing",
+      "Time": "5m",
+      "Effect": "GoTo 1E3"
+    },
+    {
+      "Action": "Visit the Burgomaster's House",
+      "Time": "1m",
+      "Effect": "GoTo 1E4"
+    },
+    {
+      "Action": "Visit the Church",
+      "Time": "1m",
+      "Effect": "GoTo 1E6"
+    },
+    {
+      "Action": "Leave The Village via the East Road",
+      "Time": "1m",
+      "Effect": "GoTo 1BE"
+    },
+    {
+      "Action": "Leave The Village via the West Road",
+      "Time": "0m",
+      "Effect": "GoTo 1EF"
+    }
+  ]
+}

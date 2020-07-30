@@ -11,7 +11,12 @@ export default function Contextbar(props) {
       let print = true;
       if (element.If) {
         let splitIf = element.If.split(' ');
-        if (!props.currentNode[splitIf[0]][splitIf[1]]) {
+        if (splitIf[0] === 'Wealth') {
+          if (props.party.wealth < splitIf[1]) {
+            print = false;
+          }
+        }
+        else if (!props.currentNode[splitIf[0]][splitIf[1]]) {
           print = false;
         }
       }
@@ -33,17 +38,15 @@ export default function Contextbar(props) {
       pad="small"
       gap="large"
       border={{ color: "dark1", size: "large" }}
-      height="8em"
       width="100%"
       margin={{ bottom: "2em" }}
     >
       <Grid
-        rows={["fill"]}
         columns={{
-          count: 3,
+          count: 4,
           size: "auto"
         }}
-        gap="small"
+        gap="xsmall"
       >
         {printOptions()}
       </Grid>

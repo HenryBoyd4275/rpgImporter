@@ -3,6 +3,7 @@
 export default class Party {
   
   items = [];
+  wealth = 100;
   
   constructor(chars) {
     this.chars = chars;

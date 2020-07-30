@@ -1,0 +1,52 @@
+{
+  "Name": "The \"Blood of the Vine\" Tavern",
+  "Key": "1E2",
+  "Description": "A single shaft of light thrusts into the main square, its brightness like a solid pillar in the heavy fog. Above the gaping doorway, a sign hangs precariously askew proclaiming this the \"Blood on the Vine Tavern.\"",
+  "Image": "",
+  "Show": [ false, false, false ],
+  "Additional": [
+    "The sign once read \"Blood of the Vine\", but the \"F\" has been scratched over with an \"N\"",
+    "This once finely appointed tavern has grown shoddy over the years. A blazing fire in the hearth gives scant warmth to the few huddled souls within.\nThere is a man behind the bar.\nThere are three colourfully dressed folk at a table to the left.",
+    "There is a lone man drinking in the far corner"
+  ],
+  "ContextActions": [
+    {
+      "Action": "Inspect the Sign",
+      "Time": "1m",
+      "Effect": "Show 0"
+    },
+    {
+      "Action": "Enter",
+      "Time": "1m",
+      "Effect": [
+        "Show 1",
+        ["Global Not Ismark", "Show 2" ]
+      ]
+    },
+    {
+      "Action": "Search for the source of the sobbing",
+      "Time": "5m",
+      "Effect": "GoTo 1E3"
+    },
+    {
+      "Action": "Visit the Burgomaster's House",
+      "Time": "1m",
+      "Effect": "GoTo 1E4"
+    },
+    {
+      "Action": "Visit the Church",
+      "Time": "1m",
+      "Effect": "GoTo 1E6"
+    },
+    {
+      "Action": "Leave The Village via the East Road",
+      "Time": "1m",
+      "Effect": "GoTo 1BE"
+    },
+    {
+      "Action": "Leave The Village via the West Road",
+      "Time": "0m",
+      "Effect": "GoTo 1EF"
+    }
+  ]
+}

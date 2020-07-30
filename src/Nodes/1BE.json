@@ -1,0 +1,16 @@
+{
+  "Todo":  "Add random encoutners and such here after combat is implemented",
+  "Name": "The Road to Barovia",
+  "Key": "1BE",
+  "Description": "You travel down the Old Svalich Road for three hours",
+  "Image": "",
+  "ContextActions": [
+    {
+      "Action": "Continue",
+      "Time": "4h",
+      "Effect": "GoTo 1E"
+    }
+  ]
+}
+
+

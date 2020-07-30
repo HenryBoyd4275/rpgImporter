@@ -3,12 +3,10 @@
     "",
     "\\src",
     "\\src\\Chars",
-    "\\src\\Chars\\NPC",
     "\\src\\Chars\\Party",
-    "\\src\\Images",
     "\\src\\Items",
     "\\src\\Nodes"
   ],
-  "SelectedNode": "\\src\\Contextbar.js",
+  "SelectedNode": "\\src\\Viewport.js",
   "PreviewInSolutionExplorer": false
 }
